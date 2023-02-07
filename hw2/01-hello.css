@@ -1,33 +1,16 @@
-.para::first-line {
+p::first-line {
   font-weight: bold;
   font-size: large;
 }
 
-.img {
+img {
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.para {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-p::first-line{
-  font-weight: bold;
-  font-size: large;
-}
-
-img{
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-p{
+p {
   margin-left: 20%;
   margin-right: 20%;
 }
