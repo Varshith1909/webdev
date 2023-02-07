@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/03-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
   </head>
   <body>
     <main>
-      <form action="">
-        <h1>Registration Form</h1>
+      <form action="#" class="form">
+        <h1>REGISTRATION FORM</h1>
         <!-- Add your code here -->
-        <label>Username: <input type="text"/></label><br><br>
-        <label>Email: <input type="mail"/></label><br><br>
-        <label>Password: <input type="password"/></label><br><br>
-        <fieldset>
-          <legend>Would you like to sign up for the newsletter?</legend>
-          <label for="yes"><input type="radio" name="y" value="true" id="yes"/>  Yes,sign me up</label>
-          <label for="no"><input type="radio" name="y" value="false" id="no"/> No, thank you</label>
-        </fieldset><br>
-        <label> Date: <input type="date" /><br><br></label>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" />
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" />
+        <p class="leg">Would you like to sign up for the newsletter?</p>
+        <fieldset class="fs">
+          <div class="rd">
+            <input type="radio" name="y" value="true" id="yes" class="radio" />
+            <label for="yes">Yes,sign me up</label>
+          </div>
+          <div class="rd">
+            <input type="radio" name="y" value="false" id="no" />
+            <label for="no">No, thank you</label>
+          </div>
+        </fieldset>
+        <label for="date"> Date: </label>
+        <input type="date" id="date" name="date" />
+        <div class="btn">
+          <button type="submit" class="submit">Submit</button>
+          <button type="reset" class="reset">Reset</button>
+        </div>
       </form>
     </main>
   </body>

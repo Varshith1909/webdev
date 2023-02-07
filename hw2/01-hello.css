@@ -1,6 +1,21 @@
-/* The class names and style below were added to help you get started with the styling the pages.
-If you would prefer, you can delete them and use your own classes and style defintions. */
-
 .container {
   width: 50vw;
+  text-align: center;
+}
+
+p::first-line{
+  font-weight: bold;
+  font-size: large;
+}
+
+img{
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p{
+  margin-left: 20%;
+  margin-right: 20%;
 }
