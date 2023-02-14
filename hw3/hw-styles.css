@@ -54,6 +54,7 @@ html {
 
 .nav-link:focus{
     border: 1px solid var(--orange);
+    outline: none;
 }
 /* Code for exercise 02-grid */
 
