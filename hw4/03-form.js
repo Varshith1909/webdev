@@ -11,13 +11,14 @@ form.addEventListener('submit', (event) =>{
     const date = form.elements.date.value;
     const newsletter = formData.get("Newsletter");
 
-    console.groupCollapsed("========= Form Submission =========");
+    
 
     if(!username || !email || !password){
         console.warn("You must enter some data to submit this form");
     }
 
     else{
+        console.groupCollapsed("========= Form Submission =========");
         console.log(`Username: ${username}`);
         console.log(`Email: ${email}`);
         if(newsletter == null){
@@ -28,7 +29,7 @@ form.addEventListener('submit', (event) =>{
         }
             
         console.log(!date ? "Date : no submission" : `Date: ${date}`);
-        
+        console.groupEnd();
     }
-    console.groupEnd();
+    
 });
