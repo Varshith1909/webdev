@@ -1,5 +1,21 @@
 const calculateTime = (date1, date2) => {
   // Given two dates, calculate and return the amount of time elapsed in years and months
+  const d1 = new Date(date1);
+  const d2 = new Date(date2);
+
+  if (isNaN(d1.getTime()) || isNaN(d2.getTime())) {
+    return 'ERROR : Invalid input provided.';
+  }
+
+  const diffYear = d1.getFullYear() - d2.getFullYear();
+  const diffMonth = d1.getMonth() - d2.getMonth();
+
+  let output = 'Time elapsed: ';
+  if (diffYear > 0) {
+    output += `${diffYear} year${diffYear > 1 ? 's' : ''}, `;
+  }
+  output += `${diffMonth} month${diffMonth > 1 ? 's' : ''}`;
+  return output;
 };
 
 // Date() formats:
